@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!TEAM: HET,RITWIKK, KON>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <title>MACHINE | REACH US </title>
+  </head>
+  <body class="contactBG">
+      <header class="headCon">
+        <h2 class="hidden">Header Container</h2>
+          <nav class="nav">
+            <h3 class="hidden">Navigation Bar Container</h3>
+            <div class="logo">
+                <h4 class="hidden">Logo</h4>
+                <img src="images/f.webp" alt="logo">
+            </div>
+      			<ul class="nav-links contact-links">
+      				<li><a href="index.html" class="navHover conHover ">HOME</a></li>
+      				<li><a href="about.html" class="navHover conHover">ABOUT</a></li>
+      				<li><a href="process.html" class="navHover conHover">PROCESS</a></li>
+      				<li><a href="contact.html" class="navHover conHover active">FEEDBACK</a></li>
+      			</ul>
+            
+    		</nav>
+      </header>
+      <main class="bodyConContainer">
+          <h2 class="hidden">Contact Main Container</h2>
+          <section class="contactContainer">
+              <h3 class="hidden">First Section Container</h3>
+              <div class="leftText">
+                <h4 class="hidden">Left Container</h4>
+                <img src="images/Mail.svg" alt="main SVG Image">
+                <p class="getTouchText">REACH OUT TO US</p>
+                <!-- <p class="supportText"> Got a question ? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p> -->
+              </div>
+
+              <div class="contactForm">
+                <h4 class="hidden">Contact Form Container</h4>
+                <p class="gotText">Have a question ?</p>
+                <p class="supportText">We'd love to hear from you. Send us a feedback.</p>
+                <form action="submit.php" method = "POST" name = "main" id = "main">
+                 
+                  <input type="text" name="name" placeholder="Enter Your Name" autofocus required pattern = "([a-zA-Z]+)" required><br><br>
+                  <input type="email" name="email" pattern = ".+@conestogac.on.ca" size = "30" required placeholder = "@conestogac.on.ca"><br><br>
+                  <input type="Postal" name="postal" placeholder="Postal Code.."><br><br>
+                  <textarea rows="10" name="message" cols="50" placeholder="Your Message.."></textarea>
+                  <div>
+                  <button type = "submit" form = "main" name = "main" value = "Submit" class="but but1 buttonPop">Submit</button>
+                  </div>
+                  </form>
+
+          </section>
+      </main>
+      <footer class="contactFooter">
+        <h2 class="hidden">Footer Main Container</h2>
+        <div class="footerPanel">
+            <h3 class="hidden">Footer Panel</h3>
+            <div class="addPanel">
+                <h4 class="hidden">Address Container</h4>
+                <p class="addTitle">ADDRESS</p>
+                <p class="addCon">850 Fountain St S,<br> Cambridge, ON N3H 0A8</p>
+                <p class="phoneNo">Phone No : (519) 748-5220</p>
+                <div class="socialRowAbout">
+                  <h3 class="hidden">Social Media Icon</h3>
+                  <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="insta"></a>
+                  <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="fb"></a>
+                  <a href="https://twitter.com/"><img src="images/twitter.svg" alt="twitter"></a>
+              </div>
+                <!-- <div class="copyCon">
+                  <p>© Copyright Reserved 2020.</p>
+                </div> -->
+            </div>
+            <div class="gpsCon">
+                <h4 class="hidden">Google Map</h4> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.534692213203!2d-80.39901888442851!3d43.3867524791314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c7588297ed47b%3A0x7758b611af21ea67!2s850%20Fountain%20St%20S%2C%20Cambridge%2C%20ON%20N3H%200A8!5e0!3m2!1sen!2sca!4v1619368143504!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+         </div>
+         <div class="footerNav">
+            <h3 class="hidden">Navigation Container</h3>
+            <ul class="nav-links contact-links">
+      				<li><a href="index.html" class="navHover conHover ">HOME</a></li>
+      				<li><a href="about.html" class="navHover conHover">ABOUT</a></li>
+      				<li><a href="process.html" class="navHover conHover">PROCESS</a></li>
+      				<li><a href="contact.html" class="navHover conHover active">FEEDBACK</a></li>
+      			</ul>
+
+            <div class="copyCon">
+              <h4 class="hidden">Copyright Text</h4>
+              <p>© Copyright 2021.</p>
+            </div>
+         </div>
+      </footer>
+      <script src="js/main.js">
+
+      </script>
+  </body>
+</html>

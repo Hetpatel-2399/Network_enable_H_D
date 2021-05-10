@@ -1,0 +1,771 @@
+/*Team: HET, RITVIKK, KON*/
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden
+{
+  display: none;
+}
+
+.processPage
+{
+  overflow-x: hidden;
+}
+
+body
+{
+  overflow-x: hidden;
+}
+
+input:focus
+{
+	background-color: aqua;
+}
+
+input:valid
+{
+	background-color: lime;
+}
+
+html
+{
+	background-color: DarkSlateGray;
+	
+}
+
+form
+{
+	margin-left: 25%;
+	padding: 10px;
+	font-size:100%;
+	text-align: center;
+	
+}
+
+label
+{
+	color: white;
+	padding: 10px;
+}
+
+legend
+{
+	color: white;
+	padding: 8px;
+	font-size:130%;
+	text-align: center;
+}
+
+
+
+
+/* Navigation bar edits starts here */
+
+.headCon
+{
+  background-color: 	
+  #1e1e62 ;
+  height: 10vh;
+}
+
+.headCon nav
+{
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo
+{
+  flex: 1;
+  /* background-color: red; */
+}
+
+.logo img
+{
+  width: 10vh;
+  height: auto;
+
+
+}
+
+.nav-links
+{
+  display: flex;
+  justify-content: space-between;
+  /* flex: 1; */
+  width: 50%;
+  /* background-color: green; */
+  padding-right: 50px;
+}
+
+.nav-links li
+{
+  margin-top: 20px;
+}
+
+.nav-links li a
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  list-style: none;
+
+  color: #fff;
+}
+
+.navHover::after
+{
+  content: "";
+  margin-top: 5px;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+}
+
+.navHover:hover::after{
+  width: 100%;
+  margin-top: 5px;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+}
+
+.active::after
+{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.burgerMenu
+{
+  display: none;
+  cursor: pointer;
+}
+
+.burgerMenu img
+{
+  width: 3vh;
+  height: auto;
+}
+
+.rotateBurger
+{
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+
+  transition: transform 0.5s ease-in;
+}
+
+
+/* Navigation bar edits ends here */
+
+/* Contact Page - Main Container */
+
+.contactContainer
+{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 100px;
+}
+
+.leftText
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.leftText img
+{
+  width: 100%;
+  height: auto;
+}
+
+p.getTouchText
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #1e1e62 ;
+}
+
+.contactForm
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+p.gotText
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+p.supportText
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: .95rem;
+  max-width: 400px;
+  text-align: center;
+}
+
+form{
+  margin-top: 40px;
+}
+
+form input
+{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #1e1e62 ;
+  padding: 10px;
+}
+
+form textarea{
+  border: 1px solid #1e1e62 ;
+  border-radius: 10px;
+}
+
+.but
+{
+  border: 1px solid #1e1e62 ;
+  background: none;
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+  margin:10px;
+  border-radius: 5px;
+
+  position: relative;
+  overflow: hidden;
+
+}
+
+.but1
+{
+  color: #1e1e62 ;
+}
+
+.but1:hover{
+  color: #fff;
+}
+
+.but::before
+{
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #1e1e62 ;
+  z-index: -1;
+
+  transition: 0.8s ease;
+  -moz-transition: 0.8s ease;
+  -ms-transition: 0.8s ease;
+  -webkit-transition: 0.8s ease;
+}
+
+.but1::before
+{
+  top: 0;
+  border-radius: 0 50% 50% 0%;
+}
+
+.but1:hover::before{
+  width: 180%;
+}
+
+
+.homeFooter
+{
+    background-color: #000;
+    min-height: 2vh;
+    position: relative;
+    top: 42px;
+}
+
+.widthCon
+{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 85%;
+  justify-content: space-between;
+  
+}
+
+.socialMediaRow
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 8%;
+  margin: 10px;
+}
+
+.contactFooter
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #000;
+  margin-top: 25px;
+}
+
+.footerPanel
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 20px;
+}
+
+.footerNav
+{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+
+  margin: auto;
+}
+
+.footerNav ul
+{
+  display: flex;
+  align-items: center;
+
+  width: 40%;
+  
+}
+
+.footerNav ul a
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5vh;
+}
+
+.socialRow
+{
+  display: flex;
+}
+
+.socialRow img
+{
+  width: 3.5vh;
+  height: auto;
+  margin-right: 20px;
+}
+
+.socialMediaRow img
+{
+  width: 30px;
+  height: auto;
+}
+
+.addPanel p, .copyCon p
+{
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+p.addTitle
+{
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.copyCon
+{
+  margin-top: 20px;
+}
+
+iframe
+{
+  width: 50vh;
+  height: 30vh;;
+  border-radius: 10px;
+}
+
+
+/* Contact Page - Main Container ends*/
+
+/* ABOUT US PAGE STYLING STARTS HERE */
+
+.aboutTitle
+{
+  height: 50vh;
+  background-color: #120528;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutTitle p
+{
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 5em;
+  font-weight: bolder;
+}
+
+.aboutCon, .aboutTagline
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+p.klTag
+{
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+
+  text-align: center;
+}
+
+
+.conSection
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+
+  width: 80%;
+}
+
+.mainConText
+{
+  text-align: justify;
+  width: 40%;
+  margin-top: 50px;
+}
+
+.mainConText p
+{
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  font-size: 1.35em;
+}
+
+.bottomTag
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.horizon
+{
+  width: 125vh;
+  border-bottom: 3px solid grey;
+}
+
+.contactLogo img
+{
+  width: 20vh;
+  height: auto;
+  margin-top: 20px;
+
+  filter: drop-shadow(0px 10px 3px #c2c2c2);
+}
+
+.bottomTagLine
+{
+  margin-top: 60px;
+  width: 50%;
+}
+
+.bottomTagLine p
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #7c0000;
+  letter-spacing: 2px;
+  text-align: center;
+  font-style: italic;
+}
+
+.footAbout
+{
+  background-color: #000;
+}
+
+.aboutFooter
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+
+}
+
+.socialRowAbout
+{
+  display: flex;
+}
+
+.socialRowAbout a img
+{
+  width: 4vh;
+  height: auto;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* ABOUT US PAGE STYLING ENDS HERE */
+
+
+.aboutCopyCon
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+
+/* PROCESS PAGE STYLING STARTS HERE */
+
+.parallaxEffect
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.parallaxEffect p
+{
+  font-family: 'Poppins', sans-serif;
+}
+
+.divTitle 
+{
+  font-family: 'Arial', sans-serif;
+  font-size: 5em;
+  font-weight: bolder;
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-size: 2em;
+}
+
+p.divContent
+{
+  text-align: center;
+  width: 50%;
+  font-size: 2em;
+  line-height: 60px;
+  color: #fff;
+}
+
+.parallaxEffect:nth-child(2)
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/parallax1.jpeg");
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.parallaxEffect:nth-child(3)
+{
+  background: #1FBBC4;
+  background-size: contain;
+  height: 100vh;
+}
+
+.parallaxEffect:nth-child(4)
+{
+  background-image: url("../images/parallax2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.parallaxEffect:nth-child(5)
+{
+  background: #1e1e62 ;
+  height: 50vh;
+}
+
+
+
+/* PROCESS PAGE STYLING ENDS HERE */
+
+/* HOMEPAGE STYLING STARTS HERE` */
+
+#homeHeader nav
+{
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.bgCover
+{
+  background-image: url("../images/bg.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.homeMainCon
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 70%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.boardImageCon img
+{
+  width: 60vh;
+  height: auto;
+  animation-name: bottleSlide;
+  animation-duration: 1.5s;
+}
+
+@keyframes bottleSlide
+{
+  0%
+  {
+    transform: translateX(350px);
+    overflow: hidden;
+    opacity: 0;
+  }
+  100%
+  {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.promoBoxex img
+{
+  width: 40vh;
+  height: auto;
+  cursor: pointer;
+}
+
+.homeTagLine p
+{
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 6em;
+  font-weight: bolder;
+  color: #fff;
+  letter-spacing: 8px;
+}
+
+span.flaText
+{
+  margin-left: 180px;
+}
+
+span.toLife
+{
+  margin-left: 360px;
+}
+
+.promoCon
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.promoConTitle p
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+    /* POP OVER PAGE STYLING */
+
+/* HOMEPAGE STYLING ENDS  HERE*/
+
+/*references*/
+/*https://www.w3schools.com/howto/howto_css_parallax.asp*/
+/*https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp*/
+
